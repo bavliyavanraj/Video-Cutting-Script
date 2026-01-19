@@ -6,7 +6,7 @@ from moviepy.video.io.VideoFileClip import VideoFileClip
 # =========================
 input_video = "anime.mp4"   # path of video
 part_duration = 20         # seconds
-output_folder = "video_parts"
+output_folder = "parts"
 # =========================
 
 os.makedirs(output_folder, exist_ok=True)
