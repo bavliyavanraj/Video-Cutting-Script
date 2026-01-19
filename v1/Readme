@@ -1,0 +1,27 @@
+Video Cutting Script
+
+This Python script splits a video into multiple smaller parts of a fixed duration and saves them in a new folder with sequential filenames.
+
+Requirements:
+- Python 3.10 or higher
+- MoviePy library
+
+Install MoviePy:
+pip install moviepy
+
+Usage:
+1. Place the video file in the same folder as the script.
+2. Edit the script settings:
+   input_video = "anime.mp4"
+   part_duration = 20
+3. Run the script:
+   python video-cutting.py
+
+Output:
+- All video parts are saved in the "video_parts" folder
+- Files are named sequentially: 1.mp4, 2.mp4, 3.mp4, etc.
+- The last part may be shorter if the video length is not evenly divisible
+
+Notes:
+- Compatible with the latest MoviePy version
+- Videos are encoded using H.264 video and AAC audio
