@@ -1,0 +1,72 @@
+Video Reel Cutter – Version 2
+
+Overview:
+Version 2 extends the basic video cutting script by converting a full video into multiple
+vertical reels (9:16 format) with static text added at the top and bottom of each reel.
+
+This version works by directly running the Python file (no GUI) and is designed to create
+social-media-ready reels automatically.
+
+Features:
+- Splits the full video into multiple parts of fixed duration
+- Converts each part into vertical reel format (1080x1920)
+- Adds static top text to every reel
+- Adds static bottom text to every reel
+- Saves output files with sequential numbering
+- No start or end time trimming in this version
+
+Requirements:
+- Python 3.10 or higher
+- MoviePy
+- Pillow
+- NumPy
+
+Install Dependencies:
+pip install moviepy pillow numpy
+
+Configuration:
+Edit the following settings at the top of the script:
+
+INPUT_VIDEO = "input.mp4"
+OUTPUT_FOLDER = "output_v2"
+
+PART_SECONDS = 5
+
+TOP_TEXT = "VIDEO PART"
+BOTTOM_TEXT = "FOLLOW FOR MORE"
+
+You can also customize:
+- Font size
+- Font style
+- Reel resolution
+- Output folder name
+
+Usage:
+1. Place the video file in the same folder as the script
+2. Update the INPUT_VIDEO filename if needed
+3. Adjust text and part duration in the configuration section
+4. Run the script using:
+
+python video-cutting.py
+
+Output:
+- All generated reels are saved in the "output_v2" folder
+- Files are named sequentially:
+  1.mp4
+  2.mp4
+  3.mp4
+  ...
+- Each reel:
+  - Is in vertical (9:16) format
+  - Contains static top and bottom text
+  - Has a fixed duration (last reel may be shorter)
+
+Notes:
+- This version processes the full video automatically
+- All values are static and defined in the script
+- Start and End time control will be added in Version 3
+- Suitable for Instagram Reels, YouTube Shorts, and TikTok
+
+Next Version (Version 3):
+- Start and End time trimming
+- More precise control over video segments
