@@ -15,10 +15,10 @@ OUTPUT_FOLDER = "parts"
 
 PART_SECONDS = 10        # seconds
 
-TOP_TEXT = "A Wild Last Boss Appeared Part"
-BOTTOM_TEXT = "Don’t miss the full video! Check it out in my Highlights."
+TOP_TEXT = "A Wild Last Boss Appeared Part" # video top text.
+BOTTOM_TEXT = "Don’t miss the full video! Check it out in my Highlights." # video bottom text.
 
-START_NUMBER = 1
+START_NUMBER = 1 # Dynamic numbers will be added at the end of the text that appears above the video.
 
 FINAL_W, FINAL_H = 1080, 1920
 TEXT_VIDEO_GAP = 10
@@ -89,7 +89,7 @@ def process_video():
         # ---------- TOP TEXT ----------
         top_lines = wrap_text(
             draw_dummy,
-            f"{TOP_TEXT}",
+            f"{TOP_TEXT} {index}",
             font_top,
             FINAL_W - 40
         )
