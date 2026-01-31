@@ -15,7 +15,7 @@ OUTPUT_FOLDER = "parts"
 
 PART_SECONDS = 10        # seconds
 
-TOP_TEXT = "A Wild Last Boss Appeared Part 1"
+TOP_TEXT = "A Wild Last Boss Appeared Part"
 BOTTOM_TEXT = "Don’t miss the full video! Check it out in my Highlights."
 
 START_NUMBER = 1
@@ -89,7 +89,7 @@ def process_video():
         # ---------- TOP TEXT ----------
         top_lines = wrap_text(
             draw_dummy,
-            f"{TOP_TEXT} {index}",
+            f"{TOP_TEXT}",
             font_top,
             FINAL_W - 40
         )
